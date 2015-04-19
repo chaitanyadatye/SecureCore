@@ -1,0 +1,12 @@
+
+This is an enhanced implementation of eSimplex based on the new
+design of Xue Liu, Hui Ding, and Kihwal Lee.
+
+Refer to the paper/tech report for details
+
+Tunable parameters are in include/eximplex.h
+
+Simply type "make" to build the binaries.
+Type "make clean" to clean up.
+
+

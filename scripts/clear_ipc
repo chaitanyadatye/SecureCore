@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+# shared memory's key is 100 which is 0x64
+SHMID=`ipcs |grep 000064 | awk '{ print $2; }'`
+
+# semaphore's key is 120 which is 0x78
+SEMID=`ipcs |grep 000078 | awk '{ print $2; }'`
+
+ipcrm shm $SHMID > /dev/null
+ipcrm sem $SEMID > /dev/null
